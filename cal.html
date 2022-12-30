@@ -40,7 +40,7 @@
 				<tr>
 					<td><button type="button" value="(" onclick="number(value)" class="space"> ( </button> </td>
 					<td><button type="button" value=")" onclick="number(value)"> )</button> </td>
-					<td><button type="button" value=" " onclick="ans()"> = </button> </td>
+					<td><button type="button" value=" " onclick="equal()"> = </button> </td>
 					<td><button type="button" value="C" onclick="del()"> DEL</button> </td>
 					<td><button type="button" value="ac" onclick="remove()" class="spaceright"> AC</button> </td>
 				</tr>
@@ -134,7 +134,7 @@
 		document.calculator.output.value=" ";
 	}
 
-	function ans(){
+	function equal(){
 		document.calculator.output.value=eval(document.calculator.input.value);
 	}
 </script>
